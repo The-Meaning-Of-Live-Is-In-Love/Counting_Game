@@ -37,7 +37,10 @@ document.write("&nbsp");
 document. write("=");
 function getValue (id) {
     Number_4 = document.getElementById(id).value; //value of the text input
-    if(Number_4 == Number_3)
+    //Number(Number_4) преобразует строку Number_4 в число
+    // === строгое сравнение. Проверяет, что типы двух значений одинаковые
+    //(в данном случае проверяется, что слева и справа мы сравниеваем число и число)
+    if(Number(Number_4) === Number_3)
     {
         alert("Верно!");
     }
