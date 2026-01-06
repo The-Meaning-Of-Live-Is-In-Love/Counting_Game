@@ -11,7 +11,15 @@
     <body>
         <div>
             <form autocomplete = "off" onsubmit = "return getValue('Number_4')">
-                <input type = "text" name = "Number_4" id = "Number_4"/>
+                <input type = "number" name = "Number_4" id = "Number_4" step="1" required/>
+                <!--
+                Значение атрубута type изменено на "number". Так форма проверяет,
+                что мы вводим именно число
+                step="1" - минимальный промежуток между числами - 1. Так форма проверяет,
+                что мы вводим именно целое число
+                -->
+                <button type="submit">Проверить</button>
+                <!--Кнопка с типом submit позволяет нам отправить форму-->
             </form>
         </div>
     </body>
